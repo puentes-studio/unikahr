@@ -51,10 +51,12 @@
     transition: 0.3s ease all;
     width: 240px;
     align-items: flex-start;
+    margin-right: 0;
   }
 
   .nav-items a {
     margin: 20px 0 20px 34px;
+    font-size: 18px;
   }
 
   .nav-items.open {
