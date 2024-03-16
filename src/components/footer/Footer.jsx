@@ -47,13 +47,13 @@ const Footer = () => {
           </ul>
           <ul className="footer-list">
             <li>
-              <NavLink to="/contact">Privacy Policy</NavLink>
+              <NavLink to="/privacy-policy">Privacy Policy</NavLink>
             </li>
             <li>
-              <NavLink to="/contact">Cookies Policy</NavLink>
+              <NavLink to="/cookies-policy">Cookies Policy</NavLink>
             </li>
             <li>
-              <NavLink to="/contact">Terms & Conditions</NavLink>
+              <NavLink to="/terms-and-conditions">Terms & Conditions</NavLink>
             </li>
           </ul>
         </div>

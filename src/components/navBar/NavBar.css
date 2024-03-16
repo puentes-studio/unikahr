@@ -12,11 +12,11 @@
 
 .UnikaHR-logo {
   height: 30px;
-  padding: 15px 10px 10px 25px;
+  padding: 15px 10px 10px 100px;
 }
 
 .nav-items {
-  margin-right: 30px;
+  margin-right: 65px;
 }
 
 .nav-items a {
@@ -24,6 +24,7 @@
   color: white;
   position: relative;
   text-decoration: none;
+  font-size: 14px;
 }
 
 .nav-toggle {
@@ -31,6 +32,11 @@
 }
 
 @media (max-width: 768px) {
+  .UnikaHR-logo {
+    height: 30px;
+    padding: 15px 10px 10px 25px;
+  }
+
   .nav-toggle {
     display: flex !important;
     padding: 20px 14px 10px 10px;
