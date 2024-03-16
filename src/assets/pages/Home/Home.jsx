@@ -1,6 +1,7 @@
 import badgeHuman from "../../extra/png/human_hr_.png";
 import NavBar from "../../../components/navBar/NavBar";
 import "./Home.css";
+import Footer from "../../../components/footer/Footer";
 
 const Home = () => {
   return (
@@ -22,6 +23,7 @@ const Home = () => {
           We specialise in providing HR support for small and medium businesses.
         </p>
       </main>
+      <Footer />
     </div>
   );
 };
