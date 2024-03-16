@@ -10,7 +10,9 @@ const NavBar = () => {
     <div>
       <div className="nav-bar">
         <div className="nav-logo">
-          <img src={UnikaLogo} className="UnikaHR-logo" alt="UnikaHR logo" />
+          <NavLink to="/">
+            <img src={UnikaLogo} className="UnikaHR-logo" alt="UnikaHR logo" />
+          </NavLink>
         </div>
         <div className={`nav-items ${isOpen && "open"}`}>
           <NavLink to="/">HOME</NavLink>

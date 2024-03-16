@@ -1,6 +1,6 @@
 import badgeHuman from "../../extra/png/human_hr_.png";
 import unikaFrame from "../../extra/png/frame_2.png";
-import hrStrategy from "../../extra/png/hr_strategy_unika.png";
+// import hrStrategy from "../../extra/png/hr_strategy_unika.png";
 import NavBar from "../../../components/navBar/NavBar";
 import "./Home.css";
 import Footer from "../../../components/footer/Footer";
@@ -56,14 +56,14 @@ const Home = () => {
 
         {/* // Division # 2 */}
 
-        <div className="strategy-container container-home">
+        <div className="strategy-container">
           <div className="strategy-title-img-container">
             {/* <h2 className="strategy-title">STRATEGY</h2> */}
-            <img
+            {/* <img
               src={hrStrategy}
               className="strategy-image-hr"
               alt="Putting the human"
-            />
+            /> */}
           </div>
 
           <p className="strategy-description">

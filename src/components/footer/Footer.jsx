@@ -9,10 +9,15 @@ const Footer = () => {
     <>
       <div className="footer-wrapper">
         <div className="container-footer-screen">
-          <div className="social-icons">
-            <img src={UnikaLogo} className="UnikaHR-logo" alt="UnikaHR logo" />
+          <div className="logo">
+            <NavLink to="/">
+              <img
+                src={UnikaLogo}
+                className="UnikaHR-logo-footer"
+                alt="UnikaHR logo"
+              />
+            </NavLink>
           </div>
-          <h4 className="footer-title">Vlad Beltran Puentes</h4>
           <div className="social-icons">
             <a
               href="https://www.linkedin.com/company/unikahr/about/"
@@ -25,30 +30,34 @@ const Footer = () => {
             </a>
           </div>
         </div>
-
-        <ul className="footer-list">
-          <li>
-            <NavLink to="/about">About</NavLink>
-          </li>
-          <li>
-            <NavLink to="/projects">Services</NavLink>
-          </li>
-          <li>
-            <NavLink to="/contact">People</NavLink>
-          </li>
-          <li>
-            <NavLink to="/contact">Contact</NavLink>
-          </li>
-          <li>
-            <NavLink to="/contact">Privacy Policy</NavLink>
-          </li>
-          <li>
-            <NavLink to="/contact">Cookies Policy</NavLink>
-          </li>
-          <li>
-            <NavLink to="/contact">Terms & Conditions</NavLink>
-          </li>
-        </ul>
+        <div className="menu-container">
+          <ul className="footer-list">
+            <li>
+              <NavLink to="/about">About</NavLink>
+            </li>
+            <li>
+              <NavLink to="/projects">Services</NavLink>
+            </li>
+            <li>
+              <NavLink to="/contact">People</NavLink>
+            </li>
+            <li>
+              <NavLink to="/contact">Contact</NavLink>
+            </li>
+          </ul>
+          <ul className="footer-list">
+            <li>
+              <NavLink to="/contact">Privacy Policy</NavLink>
+            </li>
+            <li>
+              <NavLink to="/contact">Cookies Policy</NavLink>
+            </li>
+            <li>
+              <NavLink to="/contact">Terms & Conditions</NavLink>
+            </li>
+          </ul>
+        </div>
+        <p className="footer-description">® Unika HR | 2024</p>
       </div>
     </>
   );

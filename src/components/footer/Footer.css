@@ -4,22 +4,65 @@
   background-color: black;
   align-items: center;
   justify-content: space-between;
-  margin-top: 30px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.linkedin-size {
+  height: 25px;
+}
+.instagram-size {
+  height: 26px;
+}
+
+.UnikaHR-logo-footer {
+  height: 54px;
+  padding: 25px 0 16px 0;
+}
+
+.menu-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 1px solid rgb(174, 174, 174);
+  padding-top: 25px;
+  padding-bottom: 30px;
 }
 
 .footer-list {
   display: flex;
   margin: 0;
-  padding: 10px 5px 15px 5px;
+  padding: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  padding-inline-start: 0;
 }
 
 .footer-list li {
   list-style: none;
-  padding: 5px 10px 5px 10px;
+  padding: 0 10px 0 10px;
 }
 .footer-list a {
   text-decoration: none;
-  color: rgb(221, 255, 0);
+  font-size: 12px;
+  color: rgb(234, 234, 234);
   cursor: pointer;
 }
 
@@ -46,40 +89,33 @@
 .footer-description {
   margin: 0;
   font-size: 16px;
+  padding-bottom: 30px;
+  padding-top: 40px;
 }
 
-.social-icons {
-  display: flex;
-  align-items: center;
-}
-
-.social-icons a {
-  display: inline-block;
-  margin: 0 10px;
-  cursor: pointer;
-}
-
-.linkedin-size {
-  height: 25px;
-}
-.instagram-size {
-  height: 35px;
-}
 @media screen and (min-width: 768px) {
   .footer-wrapper {
-    flex-direction: row;
+    /* flex-direction: row; */
     align-items: flex-start;
     padding: 0 20px 30px 90px;
   }
   .container-footer-screen {
     align-items: flex-end;
+    flex-direction: row;
   }
 
-  .footer-title {
-    margin: 0;
+  .menu-container {
+    flex-direction: row;
+    padding: 0;
   }
 
   .footer-list {
-    margin: 0 62px;
+    margin: 0;
+  }
+
+  .footer-description {
+    font-size: 10px;
+    padding-bottom: 30px;
+    padding-top: 40px;
   }
 }

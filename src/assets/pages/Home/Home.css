@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .human-container {
@@ -17,6 +17,7 @@
 }
 
 .unika-frame-container {
+  padding-bottom: 82px;
   background: rgb(2, 0, 36);
   background: linear-gradient(
     90deg,
@@ -28,11 +29,7 @@
 
 .strategy-container {
   background: rgb(191, 209, 75);
-  background: linear-gradient(
-    90deg,
-    rgba(191, 209, 75, 1) 0%,
-    rgba(185, 252, 70, 1) 97%
-  );
+  background: linear-gradient(90deg, rgb(91 75 209) 0%, rgb(0 240 255) 97%);
 }
 
 .human-title-img-container {
@@ -76,7 +73,7 @@
   font-size: 45px;
   font-weight: 800;
   line-height: 50px;
-  padding: 0;
+  padding: 40px;
   margin: 0;
   text-align: center;
 }
@@ -104,14 +101,14 @@
 .strategy-description {
   text-align: center;
   font-size: 18px;
-  padding: 67px 38px 150px 38px;
-  margin-top: -68px;
+  padding: 90px 38px 120px 38px;
+  margin-top: -20px;
   background: rgb(37, 37, 37);
-  background: radial-gradient(
-    circle,
-    rgba(37, 37, 37, 1) 0%,
-    rgba(97, 97, 97, 1) 96%
-  );
+  background: radial-gradient(circle, rgb(9, 9, 9) 0%, rgb(31, 30, 30) 96%);
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -124,7 +121,7 @@
   }
 
   .human-title {
-    margin-top: 137px;
+    margin-top: 93px;
     text-align: left;
   }
 
@@ -134,11 +131,15 @@
   }
 
   .human-image-hr {
-    height: 398px;
-    margin-left: -55px;
+    height: 302px;
+    margin-left: -47px;
   }
 
   .human-description {
     font-size: 22px;
+  }
+
+  .frame-description {
+    margin: 0 200px;
   }
 }
