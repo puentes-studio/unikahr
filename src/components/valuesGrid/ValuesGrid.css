@@ -1,72 +1,48 @@
-.projects {
+.values {
   margin: 0;
-  padding: 0;
+  padding: 10px 25px 40px 25px;
   list-style-type: none;
   display: flex;
 
   flex-direction: column;
 
   justify-content: space-between;
+
+  background: rgb(78, 78, 78);
+  background: linear-gradient(
+    172deg,
+    rgba(78, 78, 78, 1) 0%,
+    rgb(59, 59, 59) 39%
+  );
 }
 
-.project-container {
+.value-container {
   width: 360px;
   margin: 10px auto;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid rgb(186, 186, 186);
 }
 
-.project-link {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 80%;
-  overflow: hidden;
-  -webkit-text-indent: -9999px;
-  text-indent: -9999px;
-  z-index: 0;
-  -webkit-transition: none;
-  transition: none;
-  -webkit-tap-highlight-color: transparent;
-}
-
-.project-logo {
-  height: 8em;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-transition: filter 0.3s;
-  transition: filter 0.3s;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-.logo-client {
-  height: 80px;
-}
-
-.project-info {
-  background-color: rgb(217, 217, 217);
+.value-info {
   padding-top: 3px;
-  margin-top: -32px;
-  padding-bottom: 10px;
+  margin-top: 35px;
 }
 
-.project-title {
-  color: #333333;
+.value-title {
+  color: rgb(198, 198, 198);
   font-size: 20px;
   padding: 0;
   margin-block-start: 1em;
   margin-block-end: 0;
 }
 
-.links-container {
-  display: flex;
-  justify-content: space-around;
+.value-description {
+  color: rgb(190, 190, 190);
+  font-size: 18px;
+  line-height: 19px;
+  text-align: justify;
+  padding: 20px;
+  margin-block-start: 1em;
+  margin-block-end: 0;
 }
 
 .project-website {
@@ -75,10 +51,11 @@
 }
 
 @media screen and (min-width: 768px) {
-  .projects {
+  .values {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(400px, 4fr));
     /* grid-template-columns: repeat(auto-fill, minmax(200px, 3fr)); */
     grid-gap: 10px;
+    padding-bottom: 120px;
   }
 }

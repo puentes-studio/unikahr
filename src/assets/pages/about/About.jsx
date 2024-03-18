@@ -3,6 +3,7 @@ import unikaBadges from "../../extra/png/badgets-05.png";
 import NavBar from "../../../components/navBar/NavBar";
 import "./About.css";
 import Footer from "../../../components/footer/Footer";
+import ValuesGrid from "../../../components/valuesGrid/ValuesGrid";
 
 const About = () => {
   return (
@@ -37,7 +38,9 @@ const About = () => {
         </div>
 
         <div className="strategy-container">
-          <div className="strategy-title-img-container"></div>
+          <div className="values-content-container">
+            <ValuesGrid />
+          </div>
         </div>
       </main>
       <Footer />
