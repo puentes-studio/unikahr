@@ -17,6 +17,7 @@
 
 .nav-items {
   margin-right: 65px;
+  z-index: 100;
 }
 
 .nav-items a {

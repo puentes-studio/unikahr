@@ -1,5 +1,5 @@
-import badgeHuman from "../../extra/png/human_hr_.png";
-import unikaFrame from "../../extra/png/frame_2.png";
+import unikaTv from "../../extra/tv.mp4";
+import unikaBadges from "../../extra/png/badgets-05.png";
 import NavBar from "../../../components/navBar/NavBar";
 import "./About.css";
 import Footer from "../../../components/footer/Footer";
@@ -7,68 +7,42 @@ import Footer from "../../../components/footer/Footer";
 const About = () => {
   return (
     <div>
-      <NavBar />
+      <NavBar className="z-index-nav" />
       <main>
-        <div className="human-container container-home">
-          <div className="human-title-img-container">
-            <img
-              src={badgeHuman}
-              className="human-image-hr"
-              alt="Putting the human"
-            />
-            <h2 className="human-title">
-              BACK INTO <br /> HUMAN RESOURCES
-            </h2>
-          </div>
+        <div className="video-background">
+          <video autoPlay loop muted>
+            <source src={unikaTv} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
 
-          <p className="human-description">
-            We specialise in providing HR support for small and medium
-            businesses.
+        <div className="video-description-container">
+          <p className="video-about-description">
+            {/* It´s a question that keeps us on our toes and steers everything we
+            do.  */}
+            We will help you build HR practices that truly support your people
+            and the business.
           </p>
         </div>
 
-        {/* // Division # 1 */}
-
-        <div className="unika-frame-container container-home">
-          <div className="frame-title-img-container">
-            <h2 className="frame-title">
-              SIMPLE
-              <br />
-              CURIOUS
-              <br />
-              BOLD
-            </h2>
-            <img
-              src={unikaFrame}
-              className="frame-image-hr"
-              alt="Putting the human"
-            />
-          </div>
-          <h4>WE ARE UNIKA HR, THE PEOPLE BUSINESS.</h4>
-          <p className="frame-description">
-            A team of HR professionals who share the same values and beliefs
-            about people at work. We’ve recognised that Human Resources can
-            become very disassociated from…. humans and we want to put that
-            right!
-          </p>
+        <div className="unika-badgets-container">
+          <img
+            src={unikaBadges}
+            className="badgets-unika-image-hr"
+            alt="Putting the human"
+          />
+          <h2 className="frame-title">
+            THE SIX VALUES THAT SHOW HOW WE WORK AND WHO WE ARE.
+          </h2>
         </div>
-
-        {/* // Division # 2 */}
 
         <div className="strategy-container">
           <div className="strategy-title-img-container">
-            {/* <h2 className="strategy-title">STRATEGY</h2> */}
-            {/* <img
-              src={hrStrategy}
-              className="strategy-image-hr"
-              alt="Putting the human"
-            /> */}
+            <p className="strategy-description">
+              WE KNOW OUR STUFF AND WANT TO SHARE THIS KNOWLEDGE IN A WAY THAT
+              YOU AND YOUR PEOPLE CAN EASILY UNDERSTAND AND FIND USEFUL.
+            </p>
           </div>
-
-          <p className="strategy-description">
-            WE KNOW OUR STUFF AND WANT TO SHARE THIS KNOWLEDGE IN A WAY THAT YOU
-            AND YOUR PEOPLE CAN EASILY UNDERSTAND AND FIND USEFUL.
-          </p>
         </div>
       </main>
       <Footer />

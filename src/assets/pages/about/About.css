@@ -1,35 +1,60 @@
-.container-home {
+.video-background {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+}
+
+.video-background video {
+  max-width: 250vw;
+  object-position: top;
+}
+
+.video-description-container {
+  display: flex;
+  height: 370px;
+  align-items: center;
+  justify-content: center;
+  margin-top: -16px;
+  background: rgb(124, 42, 142);
+  background: radial-gradient(
+    circle,
+    rgba(124, 42, 142, 1) 0%,
+    rgba(18, 16, 16, 1) 100%
+  );
+}
+
+.video-about-description {
+  margin: 0 40px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.unika-badgets-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
-}
-
-.human-container {
-  background: rgb(182, 79, 160);
+  min-height: 50vh;
+  background: rgb(78, 78, 78);
   background: linear-gradient(
-    90deg,
-    rgba(182, 79, 160, 1) 3%,
-    rgba(252, 70, 107, 1) 60%,
-    rgba(252, 149, 70, 1) 97%
+    172deg,
+    rgba(78, 78, 78, 1) 0%,
+    rgba(111, 109, 109, 1) 39%,
+    rgba(37, 37, 37, 1) 100%
   );
 }
-
-.unika-frame-container {
-  padding-bottom: 82px;
-  background: rgb(2, 0, 36);
-  background: linear-gradient(
-    90deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(9, 9, 121, 1) 35%,
-    rgba(5, 100, 181, 1) 68%
-  );
+.badgets-unika-image-hr {
+  height: 280px;
 }
 
-.strategy-container {
-  background: rgb(191, 209, 75);
-  background: linear-gradient(90deg, rgb(91 75 209) 0%, rgb(0 240 255) 97%);
+.badgets-title {
+  font-size: 45px;
+  font-weight: 800;
+  line-height: 50px;
+  padding: 40px;
+  margin: 0;
+  text-align: center;
 }
 
 .human-title-img-container {
@@ -45,10 +70,6 @@
 .strategy-title-img-container {
   display: flex;
   flex-direction: column;
-}
-
-.frame-image-hr {
-  height: 340px;
 }
 
 .human-image-hr {
@@ -69,15 +90,6 @@
   text-align: center;
 }
 
-.frame-title {
-  font-size: 45px;
-  font-weight: 800;
-  line-height: 50px;
-  padding: 40px;
-  margin: 0;
-  text-align: center;
-}
-
 .strategy-title {
   font-size: 45px;
   font-weight: 800;
@@ -87,11 +99,6 @@
   text-align: center;
 }
 
-.human-description {
-  margin: 0 40px;
-  text-align: center;
-  font-size: 18px;
-}
 .frame-description {
   margin: 0 40px;
   text-align: center;
@@ -112,6 +119,14 @@
 }
 
 @media screen and (min-width: 768px) {
+  .video-background video {
+    max-width: 100vw;
+    min-height: 100vh;
+  }
+
+  .video-about-description {
+    margin: 0 200px;
+  }
   .human-title-img-container {
     flex-direction: row;
   }
