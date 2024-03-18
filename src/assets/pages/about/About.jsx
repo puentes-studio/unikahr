@@ -37,12 +37,7 @@ const About = () => {
         </div>
 
         <div className="strategy-container">
-          <div className="strategy-title-img-container">
-            <p className="strategy-description">
-              WE KNOW OUR STUFF AND WANT TO SHARE THIS KNOWLEDGE IN A WAY THAT
-              YOU AND YOUR PEOPLE CAN EASILY UNDERSTAND AND FIND USEFUL.
-            </p>
-          </div>
+          <div className="strategy-title-img-container"></div>
         </div>
       </main>
       <Footer />
