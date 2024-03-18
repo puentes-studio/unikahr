@@ -2,6 +2,7 @@ import phoneUnika from "../../extra/png/phone.png";
 import NavBar from "../../../components/navBar/NavBar";
 import "./Services.css";
 import Footer from "../../../components/footer/Footer";
+import ServicesGrid from "../../../components/serviceGrid/ServiceGrid";
 
 const Services = () => {
   return (
@@ -36,19 +37,7 @@ const Services = () => {
         {/* // Division # 2 */}
 
         <div className="strategy-container">
-          <div className="strategy-title-img-container">
-            {/* <h2 className="strategy-title">STRATEGY</h2> */}
-            {/* <img
-              src={hrStrategy}
-              className="strategy-image-hr"
-              alt="Putting the human"
-            /> */}
-          </div>
-
-          <p className="strategy-description">
-            WE KNOW OUR STUFF AND WANT TO SHARE THIS KNOWLEDGE IN A WAY THAT YOU
-            AND YOUR PEOPLE CAN EASILY UNDERSTAND AND FIND USEFUL.
-          </p>
+          <ServicesGrid />
         </div>
       </main>
       <Footer />

@@ -1,49 +1,38 @@
 // import { useState } from "react";
-import projectsData from "./ProjectsData";
-import { Link } from "react-router-dom";
-import "./ProjectsGrid.css";
+import servicesData from "./ServiceData";
+import "./ServiceGrid.css";
 
-const ProjectsGrid = () => {
+const ServicesGrid = () => {
   // const [selected, setSelected] = useState(null);
 
   return (
     <>
       <ul className="projects">
-        {projectsData.map((project) =>
-          project.list.map((item, index) => (
-            <li key={index} className="project-container">
-              <figure className="project-logo">
-                <img
-                  src={item.imageUrl}
-                  className="logo-client"
-                  alt="Project-logo"
-                />
-              </figure>
-              <div className="project-info">
-                <h3 className="project-title">{item.name}</h3>
-                <div className="links-container">
-                  <Link
-                    className="project-website"
-                    target="_blank"
-                    to={item.projectLink}
-                  >
-                    See project
-                  </Link>
-                  <Link
-                    className="project-website"
-                    target="_blank"
-                    to={item.repositoryLink}
-                  >
-                    See Repository
-                  </Link>
-                </div>
-              </div>
-            </li>
-          ))
-        )}
+        {servicesData.map((service) => (
+          <li key={service.id} className="project-container">
+            <figure className="project-logo">
+              <img
+                src={service.imageUrl}
+                className="logo-client"
+                alt="Project-logo"
+              />
+            </figure>
+            <div className="project-info">
+              <h3 className="project-title">{service.title}</h3>
+              <p>{service.description}</p>
+              <ul>
+                {service.list.map((item, index) =>
+                  item.examples.map((example, index) => (
+                    <li key={index}>{example}</li>
+                  ))
+                )}
+              </ul>
+            </div>
+          </li>
+        ))}
       </ul>
     </>
   );
 };
 
-export default ProjectsGrid;
+export default ServicesGrid;

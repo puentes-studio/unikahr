@@ -52,6 +52,7 @@
   .container-services {
     justify-content: flex-start;
     align-items: normal;
+    padding-bottom: 0;
   }
 
   .services-title-container {
