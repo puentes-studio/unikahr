@@ -31,7 +31,7 @@ const About = () => {
             className="badgets-unika-image-hr"
             alt="Putting the human"
           />
-          <h2 className="frame-title">
+          <h2 className="badgets-title">
             THE SIX VALUES THAT SHOW HOW WE WORK AND WHO WE ARE.
           </h2>
         </div>
