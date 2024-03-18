@@ -1,47 +1,107 @@
-import yourCloudImage from "../../assets/img/projects/logotype.png";
-import unikaImage from "../../assets/img/projects/unika.png";
-import puentesStudioImage from "../../assets/img/projects/logo_puentes_studio.png";
-import pokemonImage from "../../assets/img/projects/pokemon.webp";
-import drumAppImage from "../../assets/img/projects/DrumApp.png";
+import hrRules from "../../assets/extra/lego/hr_rules.png";
+import employeeAdvice from "../../assets/extra/lego/people_Advice_hr.png";
+import peopleStrategy from "../../assets/extra/lego/coaching.png";
+import employeeExperience from "../../assets/extra/lego/employee_engagement.png";
+import projects from "../../assets/extra/lego/projects.png";
+// import UnikaLego from "../../assets/extra/lego/LEGO_hr.png";
 
-const projectsData = [
+const servicesData = [
   {
     id: "1",
-    title: "Projects",
+    imageUrl: hrRules,
+    title: "Employment Regulations",
+    description:
+      "There are many regulations around employing people and we will guide you through those to make sure you are set up for success.",
     list: [
       {
-        name: "Your Cloud",
-        imageUrl: yourCloudImage,
-        projectLink: "",
-        repositoryLink: "",
-      },
-      {
-        name: "Unika HR",
-        imageUrl: unikaImage,
-        projectLink: "https://unikahr.com/",
-        repositoryLink: "",
-      },
-      {
-        name: "Puentes Studio",
-        imageUrl: puentesStudioImage,
-        projectLink: "https://puentesstudio.com/",
-        repositoryLink: "",
-      },
-
-      {
-        name: "Pokemon Desk",
-        imageUrl: pokemonImage,
-        projectLink: "https://pokemon-black-sable.vercel.app/",
-        repositoryLink: "https://github.com/puentes-studio/PokemonBlack",
-      },
-      {
-        name: "Desktop Drumpad",
-        imageUrl: drumAppImage,
-        projectLink: "https://drumpaddd.netlify.app/",
-        repositoryLink: "https://github.com/puentes-studio/Drumpad/branches",
+        examples: [
+          "Simplifying and shaping HR practices in line with legislation and your needs to keep the business compliant.",
+          "Writing or reviewing contracts of employment or freelancer agreements and highlighting any potential hot spots.",
+          "Creating an employee guide which will help all to understand how the business works.",
+        ],
       },
     ],
   },
+  {
+    id: "2",
+    imageUrl: employeeAdvice,
+    title: "Employment Regulations",
+    description:
+      "There are many regulations around employing people and we will guide you through those to make sure you are set up for success.",
+    list: [
+      {
+        examples: [
+          "Simplifying and shaping HR practices in line with legislation and your needs to keep the business compliant.",
+          "Writing or reviewing contracts of employment or freelancer agreements and highlighting any potential hot spots.",
+          "Creating an employee guide which will help all to understand how the business works.",
+        ],
+      },
+    ],
+  },
+  {
+    id: "3",
+    imageUrl: peopleStrategy,
+    title: "Employment Regulations",
+    description:
+      "There are many regulations around employing people and we will guide you through those to make sure you are set up for success.",
+    list: [
+      {
+        examples: [
+          "Simplifying and shaping HR practices in line with legislation and your needs to keep the business compliant.",
+          "Writing or reviewing contracts of employment or freelancer agreements and highlighting any potential hot spots.",
+          "Creating an employee guide which will help all to understand how the business works.",
+        ],
+      },
+    ],
+  },
+  {
+    id: "4",
+    imageUrl: employeeExperience,
+    title: "Employment Regulations",
+    description:
+      "There are many regulations around employing people and we will guide you through those to make sure you are set up for success.",
+    list: [
+      {
+        examples: [
+          "Simplifying and shaping HR practices in line with legislation and your needs to keep the business compliant.",
+          "Writing or reviewing contracts of employment or freelancer agreements and highlighting any potential hot spots.",
+          "Creating an employee guide which will help all to understand how the business works.",
+        ],
+      },
+    ],
+  },
+  {
+    id: "5",
+    imageUrl: projects,
+    title: "Employment Regulations",
+    description:
+      "There are many regulations around employing people and we will guide you through those to make sure you are set up for success.",
+    list: [
+      {
+        examples: [
+          "Simplifying and shaping HR practices in line with legislation and your needs to keep the business compliant.",
+          "Writing or reviewing contracts of employment or freelancer agreements and highlighting any potential hot spots.",
+          "Creating an employee guide which will help all to understand how the business works.",
+        ],
+      },
+    ],
+  },
+  // {
+  //   id: "6",
+  //   imageUrl: UnikaLego,
+  //   title: "",
+  //   description:
+  //     "",
+  //   list: [
+  //     {
+  //       examples: [
+  //         "",
+  //         "",
+  //         "",
+  //       ],
+  //     },
+  //   ],
+  // },
 ];
 
-export default projectsData;
+export default servicesData;
