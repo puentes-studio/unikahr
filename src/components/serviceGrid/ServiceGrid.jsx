@@ -18,11 +18,13 @@ const ServicesGrid = () => {
               />
               <div className="project-info">
                 <h3 className="project-title">{service.title}</h3>
-                <p>{service.description}</p>
+                <p className="project-description">{service.description}</p>
                 <ul>
                   {service.list.map((item, index) =>
                     item.examples.map((example, index) => (
-                      <li key={index}>{example}</li>
+                      <li className="list-description" key={index}>
+                        {example}
+                      </li>
                     ))
                   )}
                 </ul>
