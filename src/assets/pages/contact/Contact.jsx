@@ -1,74 +1,33 @@
-import badgeHuman from "../../extra/png/human_hr_.png";
-import unikaFrame from "../../extra/png/frame_2.png";
+import contactUnikahr from "../../extra/png/mailbox.png";
 import NavBar from "../../../components/navBar/NavBar";
 import "./Contact.css";
 import Footer from "../../../components/footer/Footer";
+import ContactForm from "../../../components/contactForm/ContactForm";
 
 const Contact = () => {
   return (
     <div>
       <NavBar />
       <main>
-        <div className="human-container container-home">
-          <div className="human-title-img-container">
+        <div className=" container-contact">
+          <div className="contact-title-img-container">
             <img
-              src={badgeHuman}
-              className="human-image-hr"
+              src={contactUnikahr}
+              className="contact-image-hr"
               alt="Putting the human"
             />
-            <h2 className="human-title">
-              BACK INTO <br /> HUMAN RESOURCES
-            </h2>
+            <h2 className="contact-title">Contact us!</h2>
           </div>
 
-          <p className="human-description">
-            We specialise in providing HR support for small and medium
-            businesses.
+          <p className="contact-description">
+            Fill the form below and we will be intouch with you ASAP.
           </p>
         </div>
-
-        {/* // Division # 1 */}
-
-        <div className="unika-frame-container container-home">
-          <div className="frame-title-img-container">
-            <h2 className="frame-title">
-              SIMPLE
-              <br />
-              CURIOUS
-              <br />
-              BOLD
-            </h2>
-            <img
-              src={unikaFrame}
-              className="frame-image-hr"
-              alt="Putting the human"
-            />
+        <div className="map-form-container">
+          <ContactForm />
+          <div className="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9931.587427931954!2d-0.10360628081264604!3d51.51510825049637!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487603554edf855f%3A0xa1185c8d19184c0!2sCity%20of%20London%2C%20London%2C%20UK!5e0!3m2!1sen!2ses!4v1710932841734!5m2!1sen!2ses"></iframe>
           </div>
-          <h4>WE ARE UNIKA HR, THE PEOPLE BUSINESS.</h4>
-          <p className="frame-description">
-            A team of HR professionals who share the same values and beliefs
-            about people at work. We’ve recognised that Human Resources can
-            become very disassociated from…. humans and we want to put that
-            right!
-          </p>
-        </div>
-
-        {/* // Division # 2 */}
-
-        <div className="strategy-container">
-          <div className="strategy-title-img-container">
-            {/* <h2 className="strategy-title">STRATEGY</h2> */}
-            {/* <img
-              src={hrStrategy}
-              className="strategy-image-hr"
-              alt="Putting the human"
-            /> */}
-          </div>
-
-          <p className="strategy-description">
-            WE KNOW OUR STUFF AND WANT TO SHARE THIS KNOWLEDGE IN A WAY THAT YOU
-            AND YOUR PEOPLE CAN EASILY UNDERSTAND AND FIND USEFUL.
-          </p>
         </div>
       </main>
       <Footer />
