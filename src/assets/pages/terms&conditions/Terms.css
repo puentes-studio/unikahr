@@ -9,40 +9,7 @@
 
 .conditions-description {
   margin: 40px 40px;
-  text-align: left;
+  text-align: justify;
   font-size: 14px;
   color: rgb(48, 48, 48);
-}
-
-@media screen and (min-width: 768px) {
-  .human-title-img-container {
-    flex-direction: row;
-  }
-
-  .frame-title-img-container {
-    flex-direction: row;
-  }
-
-  .human-title {
-    margin-top: 93px;
-    text-align: left;
-  }
-
-  .frame-title {
-    text-align: right;
-    margin-top: 87px;
-  }
-
-  .human-image-hr {
-    height: 302px;
-    margin-left: -47px;
-  }
-
-  .human-description {
-    font-size: 22px;
-  }
-
-  .frame-description {
-    margin: 0 200px;
-  }
 }
