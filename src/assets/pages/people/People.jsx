@@ -8,6 +8,7 @@ const People = () => {
     <div>
       <NavBar />
       <main>
+        <h1 className="people-first-title">Meet our people</h1>
         <ul className="container">
           <li className="container-people">
             {peopleData.map((people) => (
