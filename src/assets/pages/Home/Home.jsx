@@ -1,5 +1,6 @@
 import badgeHuman from "../../extra/png/human_hr_.png";
 import unikaFrame from "../../extra/png/frame_2.png";
+import CookieConsent from "react-cookie-consent";
 // import hrStrategy from "../../extra/png/hr_strategy_unika.png";
 import NavBar from "../../../components/navBar/NavBar";
 import "./Home.css";
@@ -72,6 +73,9 @@ const Home = () => {
           </p>
         </div>
       </main>
+      <CookieConsent>
+        This website uses cookies to enhance the user experience.
+      </CookieConsent>
       <Footer />
     </div>
   );
