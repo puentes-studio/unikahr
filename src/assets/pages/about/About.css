@@ -5,8 +5,12 @@
 }
 
 .video-background video {
-  max-width: 250vw;
-  object-position: top;
+  /* max-width: -webkit-fill-available;
+  object-position: top; */
+  max-width: 100%;
+  height: 65vh;
+  object-fit: cover;
+  object-position: center;
 }
 
 .video-description-container {
@@ -78,11 +82,12 @@
 
 @media screen and (min-width: 768px) {
   .video-description-container {
-    margin-top: -124px;
+    margin-top: 0;
   }
+
   .video-background video {
     max-width: 100vw;
-    min-height: 100vh;
+    height: auto;
   }
 
   .video-about-description {
