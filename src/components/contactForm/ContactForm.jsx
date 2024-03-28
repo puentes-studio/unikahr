@@ -20,7 +20,7 @@ function ContactForm() {
     // Construct the email body with form data
     const emailBody = `Name: ${formData.name}\nEmail: ${formData.email}\nDescription: ${formData.description}`;
     // Construct the mailto link
-    const mailtoLink = `mailto:vlad.puentes@gmail.com?subject=Contact Form Submission&body=${encodeURIComponent(
+    const mailtoLink = `dominika@unikahr.com?subject=Contact Form Submission&body=${encodeURIComponent(
       emailBody
     )}`;
     // Open the mail client with the mailto link
