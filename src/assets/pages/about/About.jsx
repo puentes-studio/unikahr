@@ -1,4 +1,4 @@
-import unikaTv from "../../extra/tv.mp4";
+import unikaTv from "../../extra/tvUnika.gif";
 import unikaBadges from "../../extra/png/badgets-05.png";
 import NavBar from "../../../components/navBar/NavBar";
 import "./About.css";
@@ -10,11 +10,17 @@ const About = () => {
     <div>
       <NavBar className="z-index-nav" />
       <main>
-        <div className="video-background">
-          <video autoPlay loop muted>
+        <div className="tv-background">
+          {/* <video autoPlay loop muted>
             <source src={unikaTv} type="video/mp4" />
             Your browser does not support the video tag.
-          </video>
+          </video> */}
+
+          <img
+            src={unikaTv}
+            className="tv-unika-image-hr"
+            alt="tv about unika"
+          />
         </div>
 
         <div className="video-description-container">
